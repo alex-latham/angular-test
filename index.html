@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="extraNo">
+<html ng-app="angularTest">
   <head>
     <meta charset="utf-8">
-    <title>no</title>
+    <title>Angular Test Field</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-    <script src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body ng-controller="extraNo">
+  <body ng-controller="angularTest">
     <input type="text" ng-model="listEntry">
 
-    <button type="button" name="button" ng-model="submit" ng-click="addToArray()">add junk</button>
+    <button type="button" name="button" ng-model="submit" ng-click="addToArray()">add junk</button> <!-- calls addToArray function -->
 
     <table>
       <tr ng-repeat="a in array track by $index">
@@ -35,7 +33,7 @@
         </th>
       </tr>
 
-      <tr ng-repeat="pt in pizzaToppings">
+      <tr ng-repeat="pt in pizzaToppings"> <!-- repeats everything in the pizzaToppings array -->
         <td>
           {{pt.name}}
         </td>
@@ -60,9 +58,9 @@
 
 
     <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
 
-
-    <!-- what is this help me -->
-
+    <!-- App JS -->
+    <script src="app.js"></script>
   </body>
 </html>
