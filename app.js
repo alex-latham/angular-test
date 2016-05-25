@@ -1,7 +1,8 @@
 var app = angular.module("angularTest", []);
 
+
 app.controller("angularTest", function($scope) {
-  $scope.listEntry = ""; // empty string
+  $scope.listEntry = ""; // empty string - can set a string by default
   $scope.array = [1,2,3,4,5]; // array of stuff, could be numbers, strings anything
   $scope.addToArray = function() {
     $scope.array.push($scope.listEntry);
@@ -19,5 +20,4 @@ app.controller("angularTest", function($scope) {
   $scope.showAlert = function() {
     alert($scope.alertTextOrWhatever);
   }
-
 });
