@@ -8,7 +8,7 @@ app.controller("angularTest", function($scope) {
   }
 
   $scope.pizzaToppings = [ // data attribute array
-    {"name":"cheese", "tastiness":"Heck Yeah"},
+    {"name":"cheese", "tastiness":"it's good"},
     {"name":"tuna", "tastiness":"90%"},
     {"name":"pepperoni", "tastiness":"maybe??"},
     {"name":"olives", "tastiness":"why"},
